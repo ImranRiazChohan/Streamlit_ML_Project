@@ -7,7 +7,7 @@
 import streamlit as st 
 import numpy as np 
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
@@ -102,15 +102,15 @@ X_projected = pca.fit_transform(X)
 x1 = X_projected[:, 0]
 x2 = X_projected[:, 1]
 
-fig = plt.figure()
-plt.scatter(x1, x2,
-        c=y, alpha=0.8,
-        cmap='viridis')
+#fig = plt.figure()
+#plt.scatter(x1, x2,
+#        c=y, alpha=0.8,
+#        cmap='viridis')
 
-plt.xlabel('Principal Component 1')
-plt.ylabel('Principal Component 2')
-plt.colorbar()
+#plt.xlabel('Principal Component 1')
+#plt.ylabel('Principal Component 2')
+#plt.colorbar()
 
 #plt.show()
-st.pyplot(fig)
+#st.pyplot(fig)
 
